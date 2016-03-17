@@ -1,3 +1,6 @@
+body {
+	background-image: url(background.jpg);
+}
 @keyframes	fadein{
 	0%{
 		opacity: 0;
@@ -10,14 +13,38 @@
 	100%{
 		opacity: 1;
 	}
-
 }
+@keyframes tilt{
+	0% {
+		transform: rotate(25deg);
+	}
 
+	50% {
+		transform: rotate(-25deg);
+	}
+
+	100% {
+		transform: rotate(25deg);
+	}
+}
 .title {
 	animation: fadein 3s;
-	width: 500px;
+	width: 600px;
 	height: auto;
-	position: absolute center;
-	padding-left: 300px;
-
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 50px;
 }
+.icon {
+	animation: tilt 4s infinite;
+	width: 300px;
+}
+.jessica {
+	margin-left: 950px;
+	margin-top: 35px;
+}
+.sarah {
+	margin-left: 150px;
+	margin-top: 35px
+}
+
