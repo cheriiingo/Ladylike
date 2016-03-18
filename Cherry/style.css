@@ -1,0 +1,58 @@
+body {
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+@keyframes	fadein{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0.5;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes tilt{
+	0% {
+		transform: rotate(25deg);
+	}
+
+	50% {
+		transform: rotate(-25deg);
+	}
+
+	100% {
+		transform: rotate(25deg);
+	}
+}
+.title {
+	width: 600px;
+	height: auto;
+	position: absolute;
+	margin-left: 400px;
+	margin-top: 50px;
+}
+.icon {
+	animation: tilt 4s infinite;
+	width: 300px;
+}
+.jessica {
+	margin-left: 950px;
+	margin-top: 35px;
+}
+.sarah {
+	margin-left: 150px;
+	margin-top: 35px
+}
+.heidi {
+	margin-left: 950px;
+	margin-top:-300px;
+}
+
+.cherry {
+	margin-left: 150px;
+	margin-top: -1000px;
+}
