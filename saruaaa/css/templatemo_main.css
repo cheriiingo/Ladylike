@@ -82,6 +82,7 @@ img.slide {
 
 .image-section {
     position: fixed;
+    background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
 }
 
 .image-container {
