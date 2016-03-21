@@ -28,6 +28,20 @@ body {
 		transform: rotate(25deg);
 	}
 }
+
+@keyframes invtilt{
+	0% {
+		transform: rotate(-25deg);
+	}
+
+	50% {
+		transform: rotate(25deg);
+	}
+
+	100% {
+		transform: rotate(-25deg);
+	}
+}
 .title {
 	width: 600px;
 	height: auto;
@@ -37,6 +51,11 @@ body {
 }
 .icon {
 	animation: tilt 4s infinite;
+	width: 300px;
+}
+
+.invicon {
+	animation: invtilt 4s infinite;
 	width: 300px;
 }
 .jessica {
@@ -56,3 +75,9 @@ body {
 	margin-left: 150px;
 	margin-top: -1000px;
 }
+
+#follower{
+    position: absolute;
+    float: left;
+    z-index: 1;
+    width: 50px;
