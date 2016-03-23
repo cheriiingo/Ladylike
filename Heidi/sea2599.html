@@ -1,40 +1,91 @@
 <<!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-</head>
-<link rel="stylesheet" type="text/css" href="Cindy.css">
-<body background="https://image.freepik.com/free-vector/background-with-white-squares-free-vector_23-2147501484.jpg">
-<center>
-	<h1>Daily Life of Heidy</h1><i class="fa fa-camera-retro fa-5x">Take photo by myself</i> 
-</center>
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-12">
-	
-</div>
-	
-</div>
-	
-</div>
-<div class="col-md-6">
-		<img src="http://img3.cache.netease.com/lady/2015/8/23/2015082315522805ea3.gif" alt="140x140" class="img-circle">
-		</div>
-		<div class="col-md-6">
-		<i class="fa fa-graduation-cap fa-5x"></i><i class="fa fa-hand-o-down fa-5x fa-spin"></i>
-		</div>
-		<div class="col-md-6">
-		<img src="http://www.early-riser.com/images/wake-up-fast.jpg" alt="140x140" class="img-circle">
-		</div>
-		<div class="col-md-6">
-		<img src="http://ecx.images-amazon.com/images/I/91Mbawxy5qL._SY355_.jpg" alt="140x140" class="img-circle">
-		</div>
-		<div class="col-md-6">
-		<img src="https://media.giphy.com/media/sPuDbEFCsoN32/giphy.gif" alt="140x140" class="img-circle">
-		</div>
+	<style type="text/css">
+	.test {
+			width: 450px;
+			margin-left: 800px;
+            -webkit-transform: scalex(-1);
+		}
+	h1{
+	color: #5C8A8A;
+  font-family: Arial;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+	 body {
+      text-align: center;
+      background: url("https://image.freepik.com/free-vector/background-with-white-squares-free-vector_23-2147501484.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+      margin: 0 auto;
+      max-width: 600px;
+     
+    }
+    p {
+      font-size: 22px;
+      color: grey;
+    }
 
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    .first{
+  background-image: url("http://img3.cache.netease.com/lady/2015/8/23/2015082315522805ea3.gif");
+}
+.second{
+  background-image: url("http://ecx.images-amazon.com/images/I/91Mbawxy5qL._SY355_.jpg");
+}
+.dessert{
+  background-image: url("http://www.early-riser.com/images/wake-up-fast.jpg");
+}
+.price{
+  float: right;
+  text-align:right;
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+	</style>
+</head>
+<body>
+	<h1>Daily Life of Heidy</h1>
+
+<img class="egg" src="https://media.giphy.com/media/sPuDbEFCsoN32/giphy.gif"><i class="fa fa-hand-o-down fa-5x fa-spin"></i>
+<div class="first">
+<p>who I am in the morning<span class="price">7:50am</span><br /></p>
+</div>
+<div class="second">
+<p>After I get up<span class="price">8:05am</span><br />
+<small>I brush my teeth and wash my face</small></p>
+</div>
+<div class="dessert">
+<p>when I know I am late<span class="price">8:30am</span><br /></p>
+</div>
+<p>My daily life is while here</p>
+<input type="email" placeholder="Your email">
+  <input type="submit">
 </body>
+<script type="text/javascript">
+  $('.egg').on('click',function() {
+
+  	 $(".egg").slideUp(300).delay(200).fadeIn(300);
+  });
+  </script>
 </html>
