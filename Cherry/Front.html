@@ -18,8 +18,12 @@
 <img class="tilt icon heidi" src="heidi.png">
 <img class="invtilt invicon cherry" src="cherry.png">
 
-
 </body>
+
+<audio>
+	<source src="Gee.mp3"></source>
+</audio>
+
 <script>
 $(document).bind('mousemove', function(e){
     $('#follower').css({
@@ -27,5 +31,11 @@ $(document).bind('mousemove', function(e){
        top:   e.pageY
     });
 });
+
+var audio = $("#mySoundClip")[0];
+$("nav a").mouseenter(function() {
+  audio.play();
+});
+
 </script>
 </html>
