@@ -1,10 +1,26 @@
 <<!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="bootstrap.min.css"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<title></title>
 	<style type="text/css">
+	header {
+      text-align: center;
+      color: white;
+  }
+   ul {
+      padding: 10px;
+      
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      font-size: 28px;
+	      }
 	.test {
 			width: 450px;
 			margin-left: 800px;
@@ -65,9 +81,15 @@ div {
 	</style>
 </head>
 <body>
+	<header>
 	<h1>Daily Life of Heidy</h1>
-
-<img class="egg" src="https://media.giphy.com/media/sPuDbEFCsoN32/giphy.gif"><i class="fa fa-hand-o-down fa-5x fa-spin"></i>
+    <ul>
+      <li><a class="btn btn-default" href="#" role="button">About Me</a></li>
+      <li><a class="btn btn-default" href="poseidon.html " role="button">Excelsior Girls</a></li>
+      <li><a class="btn btn-default" href="99.html" role="button">Contact Us</a></li>
+    </ul>
+  </header>
+<img class="egg" src="https://media.giphy.com/media/sPuDbEFCsoN32/giphy.gif">
 <div class="first">
 <p>who I am in the morning<span class="price">7:50am</span><br /></p>
 </div>
@@ -78,7 +100,8 @@ div {
 <div class="dessert">
 <p>when I know I am late<span class="price">8:30am</span><br /></p>
 </div>
-<p>My daily life is while here</p>
+<a href="poseidon.html"><p>Then there is my class time until 4pm</p></a>
+
 <input type="email" placeholder="Your email">
   <input type="submit">
 </body>
@@ -88,4 +111,8 @@ div {
   	 $(".egg").slideUp(300).delay(200).fadeIn(300);
   });
   </script>
+ 
+    });
+});
+</script>
 </html>

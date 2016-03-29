@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ ul {
+      padding: 10px;
+     }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      font-size: 28px;
+ 
+	      }
+h1{
+	color: #5C8A8A;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: white;
+}
+body {
+		background:#678bb3; 
+		padding:0;
+		margin:0;
+	}
+
+.sea {
+    width:100%;
+		height:1000px;
+		background: transparent url(http://doodlesof.co/1024/vector-clipart-of-a-childs-sketch-of-four-girls-holding-hands-in-a-row-by-prawny-508.jpg) top left no-repeat;
+		background-size: 100% 100%;
+		margin:auto;
+		position:relative;
+	}
+	
+	.love {
+		width: 500px;
+		height:400px;
+    position: absolute;
+		background:transparent url(http://i.dailymail.co.uk/i/pix/2015/10/22/13/2DA9539500000578-3284432-image-m-12_1445516495980.jpg) 0 0 no-repeat;
+	  }
+
+	.sea01 {
+		top:100px;
+    left:300px;
+		z-index:100;
+    animation:drift 20s linear infinite;
+}
+
+ .season {
+    width: 500px;
+    height:400px;
+    position: absolute;
+    background:transparent url(http://previews.123rf.com/images/anpannan/anpannan1307/anpannan130700047/21168850-Pretty-girl-with-skincare-and-make-up-Stock-Vector-face-wash-cartoon.jpg) 0 0 no-repeat;
+    }
+.spring01 {
+    top:100px;
+    right:300px;
+    z-index:100;
+    animation:drift 10s linear infinite;
+}
+
+
+@keyframes drive {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+@keyframes walker {
+  from {background-position:0 0;}
+  to {background-position:0 -4000px;}
+}
+
+@keyframes drift {
+  from {transform: translateX(-255px);}
+  to {transform: translateX(1350px);}
+ }
+</style>
+</head>
+<body>
+<div>
+<ul>
+      <li><a class="btn btn-default" href="#" role="button">About Me</a></li>
+      <li><a class="btn btn-default" href="poseidon.html " role="button">Excelsior Girls</a></li>
+      <li><a class="btn btn-default" href="99.html" role="button">Contact Us</a></li>
+    </ul>
+	<div class="sea">
+	<h1>We like to make up before class</h1>
+	<h1>We like to eat desserts after class</h1>
+	<h2></h2>
+	<center><h1>Cherry   Sarah   Jessica   Heidy</h1></center>
+  	<div class="love sea01"></div>
+    <div class="season spring01">
+</div>
+</body>
+</html>
